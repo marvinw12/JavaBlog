@@ -1,13 +1,13 @@
-package com.tts.techtalentsouth;
+package com.tts.techtalentblog;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TechtalentsouthApplication {
+public class TechtalentblogApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TechtalentsouthApplication.class, args);
+		SpringApplication.run(TechtalentblogApplication.class, args);
 	}
 
 }
