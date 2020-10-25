@@ -17,7 +17,11 @@ public class BlogPost {
 
     public BlogPost(){
 
-    }
+	}
+	
+	public Long getId() {
+		return id;
+	}
 
 	public BlogPost(String title, String author, String blogEntry) {
 		this.title = title;
