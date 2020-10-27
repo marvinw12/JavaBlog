@@ -3,10 +3,10 @@
   <head>
     <title>Blog Site</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <div th:replace="/fragments/styling :: head-style" ></div>
+    <div th:replace="/fragments/styling :: head-style"></div>
   </head>
   <body>
-    <div th:replace="fragments/navbar :: navbar" ></div>
+    <div th:replace="fragments/navbar :: navbar"></div>
     <div class="container">
       <div class="jumbotron container">
         <h1 class="display-4">Welcome to Our Blog Post Site!</h1>
@@ -24,7 +24,22 @@
                   th:text="${blog.author}"
                 ></h6>
                 <p class="card-text" th:text="${blog.blogEntry}"></p>
-                <a href="#" th:href="@{blogpost/{id}(id=${blog.id})}" class="card-link btn btn-danger">Delete Post</a>
+                <div class="card-footer">
+                  <div class="form-group">
+                    <a
+                      href="#"
+                      th:href="@{blogpost/edit/{id}(id=${blog.id})}"
+                      class="card-line btn btn-info"
+                      >Edit Post</a
+                    >
+                    <a
+                      href="#"
+                      th:href="@{blogpost/delete/{id}(id=${blog.id})}"
+                      class="card-link btn btn-danger"
+                      >Delete Post</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>

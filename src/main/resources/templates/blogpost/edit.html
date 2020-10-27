@@ -12,16 +12,17 @@
     <link href="css/standard.css" rel="stylesheet" />
   </head>
   <body>
-    <div th:replace="fragments/navbar :: navbar" ></div>
+    <div th:replace="fragments/navbar :: navbar"></div>
     <div class="container">
-        <h1>Create a Blog Post</h1>
+      <h1>Create a Blog Post</h1>
       <form
         action="#"
-        th:action="@{/blogpost}"
+        th:action="@{/blogpost/update/{id}(id=${blogPost.id})}"
         th:object="${blogPost}"
         method="post"
       >
         <div class="form-group">
+          <input type="hidden" th:field="*{id}" />
           <label for="Title1">Title</label>
           <input type="text" class="form-control" th:field="*{title}" />
         </div>

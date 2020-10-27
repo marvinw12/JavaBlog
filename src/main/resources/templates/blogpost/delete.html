@@ -14,31 +14,21 @@
   <body>
     <div th:replace="fragments/navbar :: navbar" ></div>
     <div class="container">
-        <h1>Create a Blog Post</h1>
-      <form
-        action="#"
-        th:action="@{/blogpost}"
-        th:object="${blogPost}"
-        method="post"
-      >
-        <div class="form-group">
-          <label for="Title1">Title</label>
-          <input type="text" class="form-control" th:field="*{title}" />
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Your Post was deleted.</h2>
+            </div>
         </div>
-        <div class="form-group">
-          <label for="Author1">Author</label>
-          <input type="text" class="form-control" th:field="*{author}" />
+
+        <div class="row">
+            <div class="col-md">
+
+            </div>
         </div>
-        <div class="form-group">
-          <label for="BlogEntry1">Blog Entry</label>
-          <textarea
-            class="form-control"
-            th:field="*{blogEntry}"
-            rows="3"
-          ></textarea>
-        </div>
-        <button class="btn btn-success" type="submit">Submit Post</button>
-      </form>
+
+    <a th:href="@{/}">
+        <button class="btn btn-success">Back to Home</button>
+    </a>
     </div>
 
     <script
