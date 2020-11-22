@@ -1,0 +1,6 @@
+2020-11-17 00:30:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BLOG_ENTRY VARCHAR(255)": "'I guess James Harden is trying to force himself to traded to the Brooklyn Nets. I''m not sure what he is thinking. That would b... (336)"; SQL statement:
+insert into blog_post (author, blog_entry, title, id) values (?, ?, ?, ?) [22001-200]
+2020-11-17 00:31:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "BLOG_ENTRY VARCHAR(255)": "'I guess James Harden is trying to force himself to traded to the Brooklyn Nets. I''m not sure what he is thinking. That would b... (276)"; SQL statement:
+insert into blog_post (author, blog_entry, title, id) values (?, ?, ?, ?) [22001-200]
