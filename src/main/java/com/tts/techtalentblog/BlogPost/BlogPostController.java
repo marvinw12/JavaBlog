@@ -23,7 +23,7 @@ public class BlogPostController {
 
     private List<BlogPost> posts = new ArrayList<>();
     
-    @GetMapping
+    @GetMapping(value = "/")
     public String index(BlogPost blogPost, Model model){
 
         posts.removeAll(posts);
